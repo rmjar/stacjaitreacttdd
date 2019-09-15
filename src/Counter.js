@@ -8,9 +8,6 @@ function Counter() {
 
   return (
     <div data-testid='testid' className='counter'>
-      <div data-testid='countervalue' className='count'>
-        {count}
-      </div>
       <button
         onClick={() => change(10)}
         id='btnIncrease'
@@ -18,6 +15,11 @@ function Counter() {
       >
         +
       </button>
+
+      <span data-testid='countervalue' className='count'>
+        {count}
+      </span>
+
       <button
         onClick={() => change(-10)}
         id='btnDecrease'
